@@ -32,6 +32,8 @@ class ProductOfferShipmentTypeStorageRepository extends AbstractRepository imple
             $productOfferShipmentTypeStorageQuery->filterByProductOfferReference_In($productOfferReferences);
         }
 
+        $productOfferShipmentTypeStorageQuery = $productOfferShipmentTypeStorageQuery->orderByIdProductOfferShipmentTypeStorage();
+
         return $this->buildQueryFromCriteria($productOfferShipmentTypeStorageQuery, $filterTransfer)
             ->setFormatter(SynchronizationDataTransferObjectFormatter::class)
             ->find();
