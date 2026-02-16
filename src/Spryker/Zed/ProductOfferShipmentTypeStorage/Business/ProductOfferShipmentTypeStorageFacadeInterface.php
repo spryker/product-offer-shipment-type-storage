@@ -99,7 +99,7 @@ interface ProductOfferShipmentTypeStorageFacadeInterface
      * @api
      *
      * @param \Generated\Shared\Transfer\FilterTransfer $filterTransfer
-     * @param list<int> $productOfferIds
+     * @param array<int> $productOfferIds
      *
      * @return list<\Generated\Shared\Transfer\SynchronizationDataTransfer>
      */

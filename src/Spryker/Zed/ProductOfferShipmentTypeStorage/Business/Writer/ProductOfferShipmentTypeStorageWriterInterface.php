@@ -12,7 +12,7 @@ use ArrayObject;
 interface ProductOfferShipmentTypeStorageWriterInterface
 {
     /**
-     * @param list<int> $productOfferIds
+     * @param array<int> $productOfferIds
      *
      * @return void
      */

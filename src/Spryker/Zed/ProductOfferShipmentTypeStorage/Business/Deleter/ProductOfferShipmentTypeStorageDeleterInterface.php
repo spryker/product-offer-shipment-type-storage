@@ -10,7 +10,7 @@ namespace Spryker\Zed\ProductOfferShipmentTypeStorage\Business\Deleter;
 interface ProductOfferShipmentTypeStorageDeleterInterface
 {
     /**
-     * @param list<int> $productOfferIds
+     * @param array<int> $productOfferIds
      * @param string|null $storeName
      *
      * @return void

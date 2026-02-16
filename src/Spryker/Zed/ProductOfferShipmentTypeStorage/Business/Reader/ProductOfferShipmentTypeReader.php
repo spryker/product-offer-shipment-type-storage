@@ -139,6 +139,7 @@ class ProductOfferShipmentTypeReader implements ProductOfferShipmentTypeReaderIn
             }
 
             $offset += $batchSize;
+            // @phpstan-ignore notIdentical.alwaysTrue (loop termination condition)
         } while ($productOfferShipmentTypeCollectionTransfer->getProductOfferShipmentTypes()->count() !== 0);
     }
 
