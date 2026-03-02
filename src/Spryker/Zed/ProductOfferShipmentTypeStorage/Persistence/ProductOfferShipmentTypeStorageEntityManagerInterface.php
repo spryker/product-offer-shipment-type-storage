@@ -11,12 +11,6 @@ use Generated\Shared\Transfer\ProductOfferShipmentTypeStorageTransfer;
 
 interface ProductOfferShipmentTypeStorageEntityManagerInterface
 {
-    /**
-     * @param \Generated\Shared\Transfer\ProductOfferShipmentTypeStorageTransfer $productOfferShipmentTypeStorageTransfer
-     * @param string $storeName
-     *
-     * @return void
-     */
     public function saveProductOfferShipmentTypeStorage(
         ProductOfferShipmentTypeStorageTransfer $productOfferShipmentTypeStorageTransfer,
         string $storeName

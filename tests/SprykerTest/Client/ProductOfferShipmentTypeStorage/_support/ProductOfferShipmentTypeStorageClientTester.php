@@ -59,11 +59,6 @@ class ProductOfferShipmentTypeStorageClientTester extends Actor
      */
     protected const PAYLOAD_KEY_ID = 'id';
 
-    /**
-     * @param string $currentStore
-     *
-     * @return void
-     */
     public function mockStoreClient(string $currentStore): void
     {
         $storeClientMock = Stub::makeEmpty(
@@ -95,12 +90,6 @@ class ProductOfferShipmentTypeStorageClientTester extends Actor
         $this->mockStorageData($productOfferShipmentTypeKey, json_encode($payload));
     }
 
-    /**
-     * @param \Generated\Shared\Transfer\ShipmentTypeTransfer $shipmentTypeTransfer
-     * @param string $store
-     *
-     * @return void
-     */
     public function mockShipmentTypeStorageData(ShipmentTypeTransfer $shipmentTypeTransfer, string $store): void
     {
         $shipmentTypeKey = sprintf(
@@ -118,12 +107,6 @@ class ProductOfferShipmentTypeStorageClientTester extends Actor
         $this->mockShipmentTypeStorageMappingData($shipmentTypeTransfer, $store);
     }
 
-    /**
-     * @param \Generated\Shared\Transfer\ShipmentTypeTransfer $shipmentTypeTransfer
-     * @param string $store
-     *
-     * @return void
-     */
     protected function mockShipmentTypeStorageMappingData(ShipmentTypeTransfer $shipmentTypeTransfer, string $store): void
     {
         $shipmentTypeMappingKey = sprintf(

@@ -33,28 +33,16 @@ class ProductOfferShipmentTypeStorageBusinessTester extends Actor
 {
     use _generated\ProductOfferShipmentTypeStorageBusinessTesterActions;
 
-    /**
-     * @return void
-     */
     public function ensureProductOfferShipmentTypeStorageTableIsEmpty(): void
     {
         $this->ensureDatabaseTableIsEmpty($this->getProductOfferShipmentTypeStorageQuery());
     }
 
-    /**
-     * @return void
-     */
     public function ensureStoreTableIsEmpty(): void
     {
         $this->ensureDatabaseTableIsEmpty($this->getStoreQuery());
     }
 
-    /**
-     * @param \Generated\Shared\Transfer\ProductOfferShipmentTypeStorageTransfer $productOfferShipmentTypeStorageTransfer
-     * @param string $storeName
-     *
-     * @return void
-     */
     public function createProductOfferShipmentTypeStorage(
         ProductOfferShipmentTypeStorageTransfer $productOfferShipmentTypeStorageTransfer,
         string $storeName
@@ -68,12 +56,6 @@ class ProductOfferShipmentTypeStorageBusinessTester extends Actor
         $productOfferShipmentTypeStorageEntity->save();
     }
 
-    /**
-     * @param string $productOfferReference
-     * @param string $storeName
-     *
-     * @return \Generated\Shared\Transfer\ProductOfferShipmentTypeStorageTransfer|null
-     */
     public function findProductOfferShipmentTypeStorageTransfer(string $productOfferReference, string $storeName): ?ProductOfferShipmentTypeStorageTransfer
     {
         $productOfferShipmentTypeStorageEntity = $this->getProductOfferShipmentTypeStorageQuery()
@@ -108,17 +90,11 @@ class ProductOfferShipmentTypeStorageBusinessTester extends Actor
         return $productOfferShipmentTypeStorageTransfers;
     }
 
-    /**
-     * @return \Orm\Zed\ProductOfferShipmentTypeStorage\Persistence\SpyProductOfferShipmentTypeStorageQuery
-     */
     protected function getProductOfferShipmentTypeStorageQuery(): SpyProductOfferShipmentTypeStorageQuery
     {
         return SpyProductOfferShipmentTypeStorageQuery::create();
     }
 
-    /**
-     * @return \Orm\Zed\Store\Persistence\SpyStoreQuery
-     */
     protected function getStoreQuery(): SpyStoreQuery
     {
         return SpyStoreQuery::create();

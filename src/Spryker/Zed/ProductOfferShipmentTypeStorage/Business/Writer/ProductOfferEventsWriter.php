@@ -28,10 +28,6 @@ class ProductOfferEventsWriter implements ProductOfferEventsWriterInterface
      */
     protected ProductOfferShipmentTypeStorageWriterInterface $productOfferShipmentTypeStorageWriter;
 
-    /**
-     * @param \Spryker\Zed\ProductOfferShipmentTypeStorage\Dependency\Facade\ProductOfferShipmentTypeStorageToEventBehaviorFacadeInterface $eventBehaviorFacade
-     * @param \Spryker\Zed\ProductOfferShipmentTypeStorage\Business\Writer\ProductOfferShipmentTypeStorageWriterInterface $productOfferShipmentTypeStorageWriter
-     */
     public function __construct(
         ProductOfferShipmentTypeStorageToEventBehaviorFacadeInterface $eventBehaviorFacade,
         ProductOfferShipmentTypeStorageWriterInterface $productOfferShipmentTypeStorageWriter

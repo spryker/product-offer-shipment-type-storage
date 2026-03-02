@@ -32,11 +32,6 @@ class ProductOfferShipmentTypeStorageReader implements ProductOfferShipmentTypeS
      */
     protected ProductOfferShipmentTypeStorageToProductOfferFacadeInterface $productOfferFacade;
 
-    /**
-     * @param \Spryker\Zed\ProductOfferShipmentTypeStorage\Persistence\ProductOfferShipmentTypeStorageRepositoryInterface $productOfferShipmentTypeStorageRepository
-     * @param \Spryker\Zed\ProductOfferShipmentTypeStorage\Business\Extractor\ProductOfferExtractorInterface $productOfferExtractor
-     * @param \Spryker\Zed\ProductOfferShipmentTypeStorage\Dependency\Facade\ProductOfferShipmentTypeStorageToProductOfferFacadeInterface $productOfferFacade
-     */
     public function __construct(
         ProductOfferShipmentTypeStorageRepositoryInterface $productOfferShipmentTypeStorageRepository,
         ProductOfferExtractorInterface $productOfferExtractor,

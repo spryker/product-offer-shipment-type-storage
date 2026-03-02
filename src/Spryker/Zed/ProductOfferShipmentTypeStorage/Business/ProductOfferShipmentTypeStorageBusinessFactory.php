@@ -39,9 +39,6 @@ use Spryker\Zed\ProductOfferShipmentTypeStorage\ProductOfferShipmentTypeStorageD
  */
 class ProductOfferShipmentTypeStorageBusinessFactory extends AbstractBusinessFactory
 {
-    /**
-     * @return \Spryker\Zed\ProductOfferShipmentTypeStorage\Business\Writer\ProductOfferShipmentTypeStorageWriterInterface
-     */
     public function createProductOfferShipmentTypeStorageWriter(): ProductOfferShipmentTypeStorageWriterInterface
     {
         return new ProductOfferShipmentTypeStorageWriter(
@@ -53,9 +50,6 @@ class ProductOfferShipmentTypeStorageBusinessFactory extends AbstractBusinessFac
         );
     }
 
-    /**
-     * @return \Spryker\Zed\ProductOfferShipmentTypeStorage\Business\Writer\ProductOfferEventsWriterInterface
-     */
     public function createProductOfferEventsWriter(): ProductOfferEventsWriterInterface
     {
         return new ProductOfferEventsWriter(
@@ -64,9 +58,6 @@ class ProductOfferShipmentTypeStorageBusinessFactory extends AbstractBusinessFac
         );
     }
 
-    /**
-     * @return \Spryker\Zed\ProductOfferShipmentTypeStorage\Business\Writer\ProductOfferShipmentTypeEventsWriterInterface
-     */
     public function createProductOfferShipmentTypeEventsWriter(): ProductOfferShipmentTypeEventsWriterInterface
     {
         return new ProductOfferShipmentTypeEventsWriter(
@@ -76,9 +67,6 @@ class ProductOfferShipmentTypeStorageBusinessFactory extends AbstractBusinessFac
         );
     }
 
-    /**
-     * @return \Spryker\Zed\ProductOfferShipmentTypeStorage\Business\Writer\ShipmentTypeEventsWriterInterface
-     */
     public function createShipmentTypeEventsWriter(): ShipmentTypeEventsWriterInterface
     {
         return new ShipmentTypeEventsWriter(
@@ -88,9 +76,6 @@ class ProductOfferShipmentTypeStorageBusinessFactory extends AbstractBusinessFac
         );
     }
 
-    /**
-     * @return \Spryker\Zed\ProductOfferShipmentTypeStorage\Business\Reader\ProductOfferShipmentTypeReaderInterface
-     */
     public function createProductOfferShipmentTypeReader(): ProductOfferShipmentTypeReaderInterface
     {
         return new ProductOfferShipmentTypeReader(
@@ -101,9 +86,6 @@ class ProductOfferShipmentTypeStorageBusinessFactory extends AbstractBusinessFac
         );
     }
 
-    /**
-     * @return \Spryker\Zed\ProductOfferShipmentTypeStorage\Business\Deleter\ProductOfferShipmentTypeStorageDeleterInterface
-     */
     public function createProductOfferShipmentTypeStorageDeleter(): ProductOfferShipmentTypeStorageDeleterInterface
     {
         return new ProductOfferShipmentTypeStorageDeleter(
@@ -113,9 +95,6 @@ class ProductOfferShipmentTypeStorageBusinessFactory extends AbstractBusinessFac
         );
     }
 
-    /**
-     * @return \Spryker\Zed\ProductOfferShipmentTypeStorage\Business\Reader\ProductOfferShipmentTypeStorageReaderInterface
-     */
     public function createProductOfferShipmentTypeStorageReader(): ProductOfferShipmentTypeStorageReaderInterface
     {
         return new ProductOfferShipmentTypeStorageReader(
@@ -125,49 +104,31 @@ class ProductOfferShipmentTypeStorageBusinessFactory extends AbstractBusinessFac
         );
     }
 
-    /**
-     * @return \Spryker\Zed\ProductOfferShipmentTypeStorage\Business\Extractor\ProductOfferShipmentTypeExtractorInterface
-     */
     public function createProductOfferShipmentTypeExtractor(): ProductOfferShipmentTypeExtractorInterface
     {
         return new ProductOfferShipmentTypeExtractor();
     }
 
-    /**
-     * @return \Spryker\Zed\ProductOfferShipmentTypeStorage\Business\Extractor\ProductOfferExtractorInterface
-     */
     public function createProductOfferExtractor(): ProductOfferExtractorInterface
     {
         return new ProductOfferExtractor();
     }
 
-    /**
-     * @return \Spryker\Zed\ProductOfferShipmentTypeStorage\Dependency\Facade\ProductOfferShipmentTypeStorageToProductOfferShipmentTypeFacadeInterface
-     */
     public function getProductOfferShipmentTypeFacade(): ProductOfferShipmentTypeStorageToProductOfferShipmentTypeFacadeInterface
     {
         return $this->getProvidedDependency(ProductOfferShipmentTypeStorageDependencyProvider::FACADE_PRODUCT_OFFER_SHIPMENT_TYPE);
     }
 
-    /**
-     * @return \Spryker\Zed\ProductOfferShipmentTypeStorage\Dependency\Facade\ProductOfferShipmentTypeStorageToProductOfferFacadeInterface
-     */
     public function getProductOfferFacade(): ProductOfferShipmentTypeStorageToProductOfferFacadeInterface
     {
         return $this->getProvidedDependency(ProductOfferShipmentTypeStorageDependencyProvider::FACADE_PRODUCT_OFFER);
     }
 
-    /**
-     * @return \Spryker\Zed\ProductOfferShipmentTypeStorage\Dependency\Facade\ProductOfferShipmentTypeStorageToStoreFacadeInterface
-     */
     public function getStoreFacade(): ProductOfferShipmentTypeStorageToStoreFacadeInterface
     {
         return $this->getProvidedDependency(ProductOfferShipmentTypeStorageDependencyProvider::FACADE_STORE);
     }
 
-    /**
-     * @return \Spryker\Zed\ProductOfferShipmentTypeStorage\Dependency\Facade\ProductOfferShipmentTypeStorageToEventBehaviorFacadeInterface
-     */
     public function getEventBehaviorFacade(): ProductOfferShipmentTypeStorageToEventBehaviorFacadeInterface
     {
         return $this->getProvidedDependency(ProductOfferShipmentTypeStorageDependencyProvider::FACADE_EVENT_BEHAVIOR);

@@ -17,9 +17,6 @@ use Spryker\Zed\Kernel\Persistence\AbstractPersistenceFactory;
  */
 class ProductOfferShipmentTypeStoragePersistenceFactory extends AbstractPersistenceFactory
 {
-    /**
-     * @return \Orm\Zed\ProductOfferShipmentTypeStorage\Persistence\SpyProductOfferShipmentTypeStorageQuery
-     */
     public function createProductOfferShipmentTypeStorageQuery(): SpyProductOfferShipmentTypeStorageQuery
     {
         return SpyProductOfferShipmentTypeStorageQuery::create();

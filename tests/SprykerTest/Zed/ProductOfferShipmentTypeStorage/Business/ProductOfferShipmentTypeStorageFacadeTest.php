@@ -86,9 +86,6 @@ class ProductOfferShipmentTypeStorageFacadeTest extends Unit
      */
     protected ProductOfferShipmentTypeStorageBusinessTester $tester;
 
-    /**
-     * @return void
-     */
     protected function setUp(): void
     {
         parent::setUp();
@@ -104,9 +101,6 @@ class ProductOfferShipmentTypeStorageFacadeTest extends Unit
         $this->tester->ensureStoreTableIsEmpty();
     }
 
-    /**
-     * @return void
-     */
     public function testWriteCollectionByProductOfferShipmentTypeEventsPersistsStorageDataByProductOfferShipmentTypeIds(): void
     {
         // Arrange
@@ -148,9 +142,6 @@ class ProductOfferShipmentTypeStorageFacadeTest extends Unit
         );
     }
 
-    /**
-     * @return void
-     */
     public function testWriteCollectionByProductOfferShipmentTypeEventsPersistsStorageDataByFkProductOfferPassedAsAdditionalValue(): void
     {
         // Arrange
@@ -192,9 +183,6 @@ class ProductOfferShipmentTypeStorageFacadeTest extends Unit
         );
     }
 
-    /**
-     * @return void
-     */
     public function testWriteCollectionByProductOfferEventsPersistsStorageData(): void
     {
         // Arrange
@@ -234,9 +222,6 @@ class ProductOfferShipmentTypeStorageFacadeTest extends Unit
         );
     }
 
-    /**
-     * @return void
-     */
     public function testWriteCollectionByProductOfferStoreEventsPersistsStorageData(): void
     {
         // Arrange
@@ -278,9 +263,6 @@ class ProductOfferShipmentTypeStorageFacadeTest extends Unit
         );
     }
 
-    /**
-     * @return void
-     */
     public function testWriteCollectionByShipmentTypeEventsPersistsStorageData(): void
     {
         // Arrange
@@ -320,9 +302,6 @@ class ProductOfferShipmentTypeStorageFacadeTest extends Unit
         );
     }
 
-    /**
-     * @return void
-     */
     public function testWriteCollectionByShipmentTypeEventsShouldAvoidEndlessLoopWhenProductOfferShipmentTypeCollectionIsEmpty(): void
     {
         // Arrange
@@ -342,9 +321,6 @@ class ProductOfferShipmentTypeStorageFacadeTest extends Unit
         $this->assertEmpty($productOfferShipmentTypeStorageTransfers);
     }
 
-    /**
-     * @return void
-     */
     public function testWriteCollectionByShipmentTypeStoreEventsPersistsStorageData(): void
     {
         // Arrange
@@ -386,9 +362,6 @@ class ProductOfferShipmentTypeStorageFacadeTest extends Unit
         );
     }
 
-    /**
-     * @return void
-     */
     public function testWriteCollectionByShipmentTypeStoreEventsShouldAvoidEndlessLoopWhenProductOfferShipmentTypeCollectionIsEmpty(): void
     {
         // Arrange
@@ -410,9 +383,6 @@ class ProductOfferShipmentTypeStorageFacadeTest extends Unit
         $this->assertEmpty($productOfferShipmentTypeStorageTransfers);
     }
 
-    /**
-     * @return void
-     */
     public function testWriteCollectionByProductOfferShipmentTypeEventsDoesNotPersistStorageDataWhenProductConcreteIsInactive(): void
     {
         // Arrange
@@ -445,9 +415,6 @@ class ProductOfferShipmentTypeStorageFacadeTest extends Unit
         $this->assertNull($productOfferShipmentTypeStorageTransfer);
     }
 
-    /**
-     * @return void
-     */
     public function testWriteCollectionByProductOfferShipmentTypeEventsDoesNotPersistStorageDataWhenProductOfferIsInactive(): void
     {
         // Arrange
@@ -478,9 +445,6 @@ class ProductOfferShipmentTypeStorageFacadeTest extends Unit
         $this->assertNull($productOfferShipmentTypeStorageTransfer);
     }
 
-    /**
-     * @return void
-     */
     public function testWriteCollectionByProductOfferShipmentTypeEventsDoesNotPersistStorageDataWhenProductOfferIsNotApproved(): void
     {
         // Arrange
@@ -511,9 +475,6 @@ class ProductOfferShipmentTypeStorageFacadeTest extends Unit
         $this->assertNull($productOfferShipmentTypeStorageTransfer);
     }
 
-    /**
-     * @return void
-     */
     public function testWriteCollectionByProductOfferShipmentTypeEventsDoesNotPersistStorageDataWhenShipmentTypeIsInactive(): void
     {
         // Arrange
@@ -544,9 +505,6 @@ class ProductOfferShipmentTypeStorageFacadeTest extends Unit
         $this->assertNull($productOfferShipmentTypeStorageTransfer);
     }
 
-    /**
-     * @return void
-     */
     public function testWriteCollectionByProductOfferShipmentTypeEventsRemovesStorageDataWhenProductConcreteIsDeactivated(): void
     {
         // Arrange
@@ -584,9 +542,6 @@ class ProductOfferShipmentTypeStorageFacadeTest extends Unit
         $this->assertNull($productOfferShipmentTypeStorageTransfer);
     }
 
-    /**
-     * @return void
-     */
     public function testWriteCollectionByProductOfferShipmentTypeEventsRemovesStorageDataWhenProductOfferIsInactive(): void
     {
         // Arrange
@@ -622,9 +577,6 @@ class ProductOfferShipmentTypeStorageFacadeTest extends Unit
         $this->assertNull($productOfferShipmentTypeStorageTransfer);
     }
 
-    /**
-     * @return void
-     */
     public function testWriteCollectionByProductOfferShipmentTypeEventsRemovesStorageDataWhenProductOfferIsNotApproved(): void
     {
         // Arrange
@@ -660,9 +612,6 @@ class ProductOfferShipmentTypeStorageFacadeTest extends Unit
         $this->assertNull($productOfferShipmentTypeStorageTransfer);
     }
 
-    /**
-     * @return void
-     */
     public function testWriteCollectionByProductOfferShipmentTypeEventsRemovesStorageDataWhenShipmentTypeIsInactive(): void
     {
         // Arrange
@@ -698,9 +647,6 @@ class ProductOfferShipmentTypeStorageFacadeTest extends Unit
         $this->assertNull($productOfferShipmentTypeStorageTransfer);
     }
 
-    /**
-     * @return void
-     */
     public function testWriteCollectionByProductOfferShipmentTypeEventsRemovesStorageDataWhenProductOfferStoreRelationIsRemoved(): void
     {
         // Arrange
@@ -735,9 +681,6 @@ class ProductOfferShipmentTypeStorageFacadeTest extends Unit
         $this->assertNull($productOfferShipmentTypeStorageTransfer);
     }
 
-    /**
-     * @return void
-     */
     public function testWriteCollectionByProductOfferShipmentTypeEventsRemovesStorageDataWhenShipmentTypeStoreRelationIsRemoved(): void
     {
         // Arrange
@@ -773,9 +716,6 @@ class ProductOfferShipmentTypeStorageFacadeTest extends Unit
         $this->assertNull($productOfferShipmentTypeStorageTransfer);
     }
 
-    /**
-     * @return void
-     */
     public function testWriteCollectionByProductOfferShipmentTypeEventsRemovesStorageDataWhenProductOfferShipmentTypeRelationIsRemoved(): void
     {
         // Arrange
@@ -810,14 +750,6 @@ class ProductOfferShipmentTypeStorageFacadeTest extends Unit
         $this->assertNull($productOfferShipmentTypeStorageTransfer);
     }
 
-    /**
-     * @param \Generated\Shared\Transfer\ProductOfferShipmentTypeStorageTransfer $productOfferShipmentTypeStorageTransfer
-     * @param \Generated\Shared\Transfer\ProductOfferTransfer $productOfferTransfer
-     * @param \Generated\Shared\Transfer\ShipmentTypeTransfer $shipmentTypeTransfer1
-     * @param \Generated\Shared\Transfer\ShipmentTypeTransfer $shipmentTypeTransfer2
-     *
-     * @return void
-     */
     protected function assertProductOfferShipmentTypeStorageTransfer(
         ProductOfferShipmentTypeStorageTransfer $productOfferShipmentTypeStorageTransfer,
         ProductOfferTransfer $productOfferTransfer,
@@ -830,9 +762,6 @@ class ProductOfferShipmentTypeStorageFacadeTest extends Unit
         $this->assertContainsEquals($shipmentTypeTransfer2->getUuidOrFail(), $productOfferShipmentTypeStorageTransfer->getShipmentTypeUuids());
     }
 
-    /**
-     * @return void
-     */
     public function testGetProductOfferShipmentTypeStorageSynchronizationDataTransfersReturnsProductOfferShipmentTypeStorageDataByProductOfferIds(): void
     {
         // Arrange
@@ -861,9 +790,6 @@ class ProductOfferShipmentTypeStorageFacadeTest extends Unit
         $this->assertEquals($productOfferShipmentTypeStorageTransfer->toArray(), $synchronizationDataTransfers[0]->getData());
     }
 
-    /**
-     * @return void
-     */
     public function testGetProductOfferShipmentTypeStorageSynchronizationDataTransfersReturnsProductOfferShipmentTypeStorageDataByOffsetAndLimit(): void
     {
         // Arrange
@@ -909,9 +835,6 @@ class ProductOfferShipmentTypeStorageFacadeTest extends Unit
         $this->assertEquals($productOfferShipmentTypeStorageTransfer->toArray(), $synchronizationDataTransfers[0]->getData());
     }
 
-    /**
-     * @return void
-     */
     public function testGetProductOfferShipmentTypeStorageSynchronizationDataTransfersReturnsProductOfferShipmentTypeStorageDataWhenNoOffsetAndLimitIsSet(): void
     {
         $productOfferTransfer1 = $this->tester->haveProductOffer(
@@ -952,9 +875,6 @@ class ProductOfferShipmentTypeStorageFacadeTest extends Unit
         $this->assertCount(3, $synchronizationDataTransfers);
     }
 
-    /**
-     * @return void
-     */
     public function testGetProductOfferShipmentTypeStorageSynchronizationDataTransfersReturnsEmptyArrayWhenThereIsNoDataInTheTable(): void
     {
         $productOfferTransfer1 = $this->tester->haveProductOffer(
@@ -978,9 +898,6 @@ class ProductOfferShipmentTypeStorageFacadeTest extends Unit
         $this->assertCount(0, $synchronizationDataTransfers);
     }
 
-    /**
-     * @return void
-     */
     public function testGetProductOfferShipmentTypeStorageSynchronizationDataTransfersReturnsEmptyArrayWhenOffsetIsHigherThenRowsAmount(): void
     {
         $productOfferTransfer1 = $this->tester->haveProductOffer(

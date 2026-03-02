@@ -26,11 +26,6 @@ class ProductOfferShipmentTypeStorageToProductOfferShipmentTypeFacadeBridge impl
         $this->productOfferShipmentTypeFacade = $productOfferShipmentTypeFacade;
     }
 
-    /**
-     * @param \Generated\Shared\Transfer\ProductOfferShipmentTypeCriteriaTransfer $productOfferShipmentTypeCriteriaTransfer
-     *
-     * @return \Generated\Shared\Transfer\ProductOfferShipmentTypeCollectionTransfer
-     */
     public function getProductOfferShipmentTypeCollection(
         ProductOfferShipmentTypeCriteriaTransfer $productOfferShipmentTypeCriteriaTransfer
     ): ProductOfferShipmentTypeCollectionTransfer {

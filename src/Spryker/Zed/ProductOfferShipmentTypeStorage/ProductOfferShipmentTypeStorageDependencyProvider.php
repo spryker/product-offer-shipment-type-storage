@@ -44,11 +44,6 @@ class ProductOfferShipmentTypeStorageDependencyProvider extends AbstractBundleDe
      */
     public const PLUGINS_PRODUCT_OFFER_SHIPMENT_TYPE_STORAGE_FILTER = 'PLUGINS_PRODUCT_OFFER_SHIPMENT_TYPE_STORAGE_FILTER';
 
-    /**
-     * @param \Spryker\Zed\Kernel\Container $container
-     *
-     * @return \Spryker\Zed\Kernel\Container
-     */
     public function provideBusinessLayerDependencies(Container $container): Container
     {
         $container = parent::provideBusinessLayerDependencies($container);
@@ -61,11 +56,6 @@ class ProductOfferShipmentTypeStorageDependencyProvider extends AbstractBundleDe
         return $container;
     }
 
-    /**
-     * @param \Spryker\Zed\Kernel\Container $container
-     *
-     * @return \Spryker\Zed\Kernel\Container
-     */
     public function provideCommunicationLayerDependencies(Container $container): Container
     {
         $container = parent::provideCommunicationLayerDependencies($container);
@@ -74,11 +64,6 @@ class ProductOfferShipmentTypeStorageDependencyProvider extends AbstractBundleDe
         return $container;
     }
 
-    /**
-     * @param \Spryker\Zed\Kernel\Container $container
-     *
-     * @return \Spryker\Zed\Kernel\Container
-     */
     protected function addProductOfferShipmentTypeFacade(Container $container): Container
     {
         $container->set(static::FACADE_PRODUCT_OFFER_SHIPMENT_TYPE, function (Container $container) {
@@ -90,11 +75,6 @@ class ProductOfferShipmentTypeStorageDependencyProvider extends AbstractBundleDe
         return $container;
     }
 
-    /**
-     * @param \Spryker\Zed\Kernel\Container $container
-     *
-     * @return \Spryker\Zed\Kernel\Container
-     */
     protected function addProductOfferFacade(Container $container): Container
     {
         $container->set(static::FACADE_PRODUCT_OFFER, function (Container $container) {
@@ -106,11 +86,6 @@ class ProductOfferShipmentTypeStorageDependencyProvider extends AbstractBundleDe
         return $container;
     }
 
-    /**
-     * @param \Spryker\Zed\Kernel\Container $container
-     *
-     * @return \Spryker\Zed\Kernel\Container
-     */
     protected function addEventBehaviorFacade(Container $container): Container
     {
         $container->set(static::FACADE_EVENT_BEHAVIOR, function (Container $container) {
@@ -122,11 +97,6 @@ class ProductOfferShipmentTypeStorageDependencyProvider extends AbstractBundleDe
         return $container;
     }
 
-    /**
-     * @param \Spryker\Zed\Kernel\Container $container
-     *
-     * @return \Spryker\Zed\Kernel\Container
-     */
     protected function addStoreFacade(Container $container): Container
     {
         $container->set(static::FACADE_STORE, function (Container $container) {
@@ -138,11 +108,6 @@ class ProductOfferShipmentTypeStorageDependencyProvider extends AbstractBundleDe
         return $container;
     }
 
-    /**
-     * @param \Spryker\Zed\Kernel\Container $container
-     *
-     * @return \Spryker\Zed\Kernel\Container
-     */
     protected function addProductOfferShipmentTypeStorageFilterPlugins(Container $container): Container
     {
         $container->set(static::PLUGINS_PRODUCT_OFFER_SHIPMENT_TYPE_STORAGE_FILTER, function () {

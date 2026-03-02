@@ -43,12 +43,6 @@ class ProductOfferStorageExpander implements ProductOfferStorageExpanderInterfac
      */
     protected ProductOfferShipmentTypeStorageToShipmentTypeStorageClientInterface $shipmentTypeStorageClient;
 
-    /**
-     * @param \Spryker\Client\ProductOfferShipmentTypeStorage\Generator\ProductOfferShipmentTypeKeyGeneratorInterface $productOfferShipmentTypeKeyGenerator
-     * @param \Spryker\Client\ProductOfferShipmentTypeStorage\Dependency\Client\ProductOfferShipmentTypeStorageToStorageClientInterface $storageClient
-     * @param \Spryker\Client\ProductOfferShipmentTypeStorage\Dependency\Client\ProductOfferShipmentTypeStorageToStoreClientInterface $storeClient
-     * @param \Spryker\Client\ProductOfferShipmentTypeStorage\Dependency\Client\ProductOfferShipmentTypeStorageToShipmentTypeStorageClientInterface $shipmentTypeStorageClient
-     */
     public function __construct(
         ProductOfferShipmentTypeKeyGeneratorInterface $productOfferShipmentTypeKeyGenerator,
         ProductOfferShipmentTypeStorageToStorageClientInterface $storageClient,
@@ -61,11 +55,6 @@ class ProductOfferStorageExpander implements ProductOfferStorageExpanderInterfac
         $this->shipmentTypeStorageClient = $shipmentTypeStorageClient;
     }
 
-    /**
-     * @param \Generated\Shared\Transfer\ProductOfferStorageTransfer $productOfferStorageTransfer
-     *
-     * @return \Generated\Shared\Transfer\ProductOfferStorageTransfer
-     */
     public function expandProductOfferStorageWithShipmentTypes(ProductOfferStorageTransfer $productOfferStorageTransfer): ProductOfferStorageTransfer
     {
         $currentStoreName = $this->storeClient->getCurrentStore()->getNameOrFail();

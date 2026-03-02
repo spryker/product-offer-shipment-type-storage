@@ -11,10 +11,5 @@ use Generated\Shared\Transfer\ProductOfferStorageTransfer;
 
 interface ProductOfferStorageExpanderInterface
 {
-    /**
-     * @param \Generated\Shared\Transfer\ProductOfferStorageTransfer $productOfferStorageTransfer
-     *
-     * @return \Generated\Shared\Transfer\ProductOfferStorageTransfer
-     */
     public function expandProductOfferStorageWithShipmentTypes(ProductOfferStorageTransfer $productOfferStorageTransfer): ProductOfferStorageTransfer;
 }

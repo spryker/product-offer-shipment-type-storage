@@ -15,12 +15,6 @@ use Spryker\Zed\Kernel\Persistence\AbstractEntityManager;
  */
 class ProductOfferShipmentTypeStorageEntityManager extends AbstractEntityManager implements ProductOfferShipmentTypeStorageEntityManagerInterface
 {
-    /**
-     * @param \Generated\Shared\Transfer\ProductOfferShipmentTypeStorageTransfer $productOfferShipmentTypeStorageTransfer
-     * @param string $storeName
-     *
-     * @return void
-     */
     public function saveProductOfferShipmentTypeStorage(
         ProductOfferShipmentTypeStorageTransfer $productOfferShipmentTypeStorageTransfer,
         string $storeName

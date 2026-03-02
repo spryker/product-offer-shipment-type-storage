@@ -11,12 +11,6 @@ use Generated\Shared\Transfer\ProductOfferStorageTransfer;
 
 interface ProductOfferShipmentTypeKeyGeneratorInterface
 {
-    /**
-     * @param \Generated\Shared\Transfer\ProductOfferStorageTransfer $productOfferStorageTransfer
-     * @param string $storeName
-     *
-     * @return string
-     */
     public function generateProductOfferShipmentTypeKey(
         ProductOfferStorageTransfer $productOfferStorageTransfer,
         string $storeName

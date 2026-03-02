@@ -11,10 +11,5 @@ use Spryker\Service\Synchronization\Dependency\Plugin\SynchronizationKeyGenerato
 
 interface ProductOfferShipmentTypeStorageToSynchronizationServiceInterface
 {
-    /**
-     * @param string $resourceName
-     *
-     * @return \Spryker\Service\Synchronization\Dependency\Plugin\SynchronizationKeyGeneratorPluginInterface
-     */
     public function getStorageKeyBuilder(string $resourceName): SynchronizationKeyGeneratorPluginInterface;
 }

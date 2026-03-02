@@ -13,11 +13,6 @@ use Generated\Shared\Transfer\ProductOfferShipmentTypeIteratorCriteriaTransfer;
 
 interface ProductOfferShipmentTypeStorageToProductOfferShipmentTypeFacadeInterface
 {
-    /**
-     * @param \Generated\Shared\Transfer\ProductOfferShipmentTypeCriteriaTransfer $productOfferShipmentTypeCriteriaTransfer
-     *
-     * @return \Generated\Shared\Transfer\ProductOfferShipmentTypeCollectionTransfer
-     */
     public function getProductOfferShipmentTypeCollection(
         ProductOfferShipmentTypeCriteriaTransfer $productOfferShipmentTypeCriteriaTransfer
     ): ProductOfferShipmentTypeCollectionTransfer;

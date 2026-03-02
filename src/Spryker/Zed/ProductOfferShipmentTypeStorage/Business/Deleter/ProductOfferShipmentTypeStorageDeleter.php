@@ -31,11 +31,6 @@ class ProductOfferShipmentTypeStorageDeleter implements ProductOfferShipmentType
      */
     protected ProductOfferShipmentTypeStorageToProductOfferFacadeInterface $productOfferFacade;
 
-    /**
-     * @param \Spryker\Zed\ProductOfferShipmentTypeStorage\Persistence\ProductOfferShipmentTypeStorageEntityManagerInterface $productOfferShipmentTypeStorageEntityManager
-     * @param \Spryker\Zed\ProductOfferShipmentTypeStorage\Business\Extractor\ProductOfferExtractorInterface $productOfferExtractor
-     * @param \Spryker\Zed\ProductOfferShipmentTypeStorage\Dependency\Facade\ProductOfferShipmentTypeStorageToProductOfferFacadeInterface $productOfferFacade
-     */
     public function __construct(
         ProductOfferShipmentTypeStorageEntityManagerInterface $productOfferShipmentTypeStorageEntityManager,
         ProductOfferExtractorInterface $productOfferExtractor,

@@ -19,20 +19,11 @@ class ProductOfferShipmentTypeKeyGenerator implements ProductOfferShipmentTypeKe
      */
     protected ProductOfferShipmentTypeStorageToSynchronizationServiceInterface $synchronizationService;
 
-    /**
-     * @param \Spryker\Client\ProductOfferShipmentTypeStorage\Dependency\Service\ProductOfferShipmentTypeStorageToSynchronizationServiceInterface $synchronizationService
-     */
     public function __construct(ProductOfferShipmentTypeStorageToSynchronizationServiceInterface $synchronizationService)
     {
         $this->synchronizationService = $synchronizationService;
     }
 
-    /**
-     * @param \Generated\Shared\Transfer\ProductOfferStorageTransfer $productOfferStorageTransfer
-     * @param string $storeName
-     *
-     * @return string
-     */
     public function generateProductOfferShipmentTypeKey(
         ProductOfferStorageTransfer $productOfferStorageTransfer,
         string $storeName

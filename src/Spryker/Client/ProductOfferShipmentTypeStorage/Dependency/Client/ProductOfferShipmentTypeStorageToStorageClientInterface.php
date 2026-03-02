@@ -9,10 +9,5 @@ namespace Spryker\Client\ProductOfferShipmentTypeStorage\Dependency\Client;
 
 interface ProductOfferShipmentTypeStorageToStorageClientInterface
 {
-    /**
-     * @param string $key
-     *
-     * @return mixed
-     */
     public function get(string $key): mixed;
 }

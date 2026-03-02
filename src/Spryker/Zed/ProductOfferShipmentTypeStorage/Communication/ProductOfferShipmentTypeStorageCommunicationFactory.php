@@ -19,9 +19,6 @@ use Spryker\Zed\ProductOfferShipmentTypeStorage\ProductOfferShipmentTypeStorageD
  */
 class ProductOfferShipmentTypeStorageCommunicationFactory extends AbstractCommunicationFactory
 {
-    /**
-     * @return \Spryker\Zed\ProductOfferShipmentTypeStorage\Dependency\Facade\ProductOfferShipmentTypeStorageToProductOfferShipmentTypeFacadeInterface
-     */
     public function getProductOfferShipmentTypeFacade(): ProductOfferShipmentTypeStorageToProductOfferShipmentTypeFacadeInterface
     {
         return $this->getProvidedDependency(ProductOfferShipmentTypeStorageDependencyProvider::FACADE_PRODUCT_OFFER_SHIPMENT_TYPE);

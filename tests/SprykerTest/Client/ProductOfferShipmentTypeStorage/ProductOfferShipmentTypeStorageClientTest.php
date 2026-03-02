@@ -65,9 +65,6 @@ class ProductOfferShipmentTypeStorageClientTest extends Unit
      */
     protected ProductOfferShipmentTypeStorageClientTester $tester;
 
-    /**
-     * @return void
-     */
     public function testExpandProductOfferStorageWithShipmentTypesThrowsAnExceptionWhenProductOfferReferenceIsEmpty(): void
     {
         // Assert
@@ -77,9 +74,6 @@ class ProductOfferShipmentTypeStorageClientTest extends Unit
         $this->tester->getClient()->expandProductOfferStorageWithShipmentTypes(new ProductOfferStorageTransfer());
     }
 
-    /**
-     * @return void
-     */
     public function testExpandProductOfferStorageWithShipmentTypesDoesntExpandWhenNoProductOfferShipmentTypeDataExists(): void
     {
         // Arrange
@@ -92,9 +86,6 @@ class ProductOfferShipmentTypeStorageClientTest extends Unit
         $this->assertEmpty($productOfferStorageTransfer->getShipmentTypes());
     }
 
-    /**
-     * @return void
-     */
     public function testExpandProductOfferStorageWithShipmentTypesDoesntExpandWhenNoProductOfferShipmentTypeDataExistsForProductOfferReference(): void
     {
         // Arrange
@@ -117,9 +108,6 @@ class ProductOfferShipmentTypeStorageClientTest extends Unit
         $this->assertEmpty($productOfferStorageTransfer->getShipmentTypes());
     }
 
-    /**
-     * @return void
-     */
     public function testExpandProductOfferStorageWithShipmentTypesDoesntExpandWhenNoProductOfferShipmentTypeDataExistsForStore(): void
     {
         // Arrange
@@ -146,9 +134,6 @@ class ProductOfferShipmentTypeStorageClientTest extends Unit
         $this->assertEmpty($productOfferStorageTransfer->getShipmentTypes());
     }
 
-    /**
-     * @return void
-     */
     public function testExpandProductOfferStorageWithShipmentTypesDoesntExpandWhenNoShipmentTypesFoundByShipmentTypeUuids(): void
     {
         // Arrange
@@ -173,9 +158,6 @@ class ProductOfferShipmentTypeStorageClientTest extends Unit
         $this->assertEmpty($productOfferStorageTransfer->getShipmentTypes());
     }
 
-    /**
-     * @return void
-     */
     public function testExpandProductOfferStorageWithShipmentTypesExpandsWhenProductOfferShipmentTypeDataExistsForProductOfferReferenceAndStore(): void
     {
         // Arrange

@@ -22,11 +22,6 @@ class ProductOfferShipmentTypeStorageToStorageClientBridge implements ProductOff
         $this->storageClient = $storageClient;
     }
 
-    /**
-     * @param string $key
-     *
-     * @return mixed
-     */
     public function get(string $key): mixed
     {
         return $this->storageClient->get($key);
